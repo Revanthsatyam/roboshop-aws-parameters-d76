@@ -8,4 +8,7 @@ parameters = {
   "rds.dev.master_password"   = { type = "SecureString", value = "roboshop1234" }
 
   "elasticache.dev.endpoint" = { type = "String", value = "dev-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "cart.dev.CATALOGUE_HOST" = { type = "String", value = "catalogue-dev.rsdevops.in" }
+  "cart.dev.CATALOGUE_PORT" = { type = "String", value = "80" }
 }
