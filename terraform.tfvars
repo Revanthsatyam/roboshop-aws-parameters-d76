@@ -14,4 +14,13 @@ parameters = {
   "cart.dev.CATALOGUE_PORT" = { type = "String", value = "80" }
 
   "shipping.dev.CART_ENDPOINT" = { type = "String", value = "cart-dev.rsdevops.in:80" }
+
+  "payment.dev.CART_HOST" = { type = "String", value = "cart-dev.rsdevops.in" }
+  "payment.dev.CART_PORT" = { type = "String", value = "80" }
+  "payment.dev.USER_HOST" = { type = "String", value = "user-dev.rsdevops.in" }
+  "payment.dev.USER_PORT" = { type = "String", value = "80" }
+
+  "payment.dev.AMQP_HOST" = { type = "String", value = "rabbitmq-dev.rsdevops.in" }
+  "payment.dev.AMQP_USER" = { type = "String", value = "roboshop" }
+  "payment.dev.AMQP_PASS" = { type = "SecureString", value = "roboshop123" }
 }
