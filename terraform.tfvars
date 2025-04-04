@@ -25,5 +25,5 @@ parameters = {
   "payment.dev.AMQP_PASS" = { type = "SecureString", value = "roboshop123" }
 
   "elasticsearch.username"    = { type = "String", value = "elastic" }
-  "elasticsearch.password"    = { type = "SecureString", value = "QCjimg6v*esMpC2zq=52" }
+  "elasticsearch.password"    = { type = "SecureString", value = "Pf+0O*2U1OeXdWQ+_wnU" }
 }
