@@ -29,4 +29,11 @@ parameters = {
 
   "nexus.username"    = { type = "String", value = "admin" }
   "nexus.password"    = { type = "SecureString", value = "Devops74" }
+
+  "cart.version"         = { type = "String", value = "2" }
+  "catalogue.version"    = { type = "String", value = "31" }
+  "user.version"         = { type = "String", value = "2" }
+  "shipping.version"     = { type = "String", value = "9" }
+  "payment.version"      = { type = "String", value = "3" }
+  "frontend.version"     = { type = "String", value = "1" }
 }
