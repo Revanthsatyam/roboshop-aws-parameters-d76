@@ -73,4 +73,7 @@ parameters = {
   "shipping.prod.version"     = { type = "String", value = "9" }
   "payment.prod.version"      = { type = "String", value = "3" }
   "frontend.prod.version"     = { type = "String", value = "1" }
+
+  "catalogue.prod.DOCUMENTDB" = { type = "String", value = "true" }
+  "catalogue.prod.MONGO_URL"  = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-c0104uc8qq16.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&tlsCAFile=/app/global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 }
