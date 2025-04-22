@@ -87,4 +87,13 @@ parameters = {
 
   "shipping.prod.CART_ENDPOINT_k" = { type = "String", value = "cart:80" }
   "shipping.prod.DB_HOST"         = { type = "SecureString", value = "prod-rds-cluster.cluster-c0104uc8qq16.us-east-1.rds.amazonaws.com" }
+
+  "payment.prod.CART_HOST_k" = { type = "String", value = "cart" }
+  "payment.prod.CART_PORT_k" = { type = "String", value = "80" }
+  "payment.prod.USER_HOST_k" = { type = "String", value = "user" }
+  "payment.prod.USER_PORT_k" = { type = "String", value = "80" }
+
+  "payment.prod.AMQP_HOST_k" = { type = "String", value = "rabbitmq-prod.rsdevops.in" }
+  "payment.prod.AMQP_USER_k" = { type = "String", value = "roboshop" }
+  "payment.prod.AMQP_PASS_k" = { type = "SecureString", value = "roboshop123" }
 }
