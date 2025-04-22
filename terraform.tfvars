@@ -83,5 +83,8 @@ parameters = {
 
   "cart.prod.CATALOGUE_HOST_k" = { type = "String", value = "catalogue" }
   "cart.prod.CATALOGUE_PORT_k" = { type = "String", value = "80" }
-  "cart.prod.REDIS_HOST"     = { type = "SecureString", value = "prod-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+  "cart.prod.REDIS_HOST"       = { type = "SecureString", value = "prod-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "shipping.prod.CART_ENDPOINT_k" = { type = "String", value = "cart:80" }
+  "shipping.prod.DB_HOST"         = { type = "SecureString", value = "prod-rds-cluster.cluster-c0104uc8qq16.us-east-1.rds.amazonaws.com" }
 }
