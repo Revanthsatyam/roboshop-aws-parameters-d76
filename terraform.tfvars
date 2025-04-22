@@ -79,5 +79,9 @@ parameters = {
 
   "user.prod.DOCUMENTDB" = { type = "String", value = "true" }
   "user.prod.MONGO_URL"  = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-c0104uc8qq16.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=/app/global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
-  "user.prod.REDIS_HOST"  = { type = "SecureString", value = "prod-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+  "user.prod.REDIS_HOST" = { type = "SecureString", value = "prod-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "cart.prod.CATALOGUE_HOST" = { type = "String", value = "catalogue" }
+  "cart.prod.CATALOGUE_PORT" = { type = "String", value = "80" }
+  "cart.prod.REDIS_HOST"     = { type = "SecureString", value = "prod-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
 }
