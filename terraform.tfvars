@@ -96,4 +96,64 @@ parameters = {
   "payment.prod.AMQP_HOST_k" = { type = "String", value = "rabbitmq-prod.rsdevops.in" }
   "payment.prod.AMQP_USER_k" = { type = "String", value = "roboshop" }
   "payment.prod.AMQP_PASS_k" = { type = "SecureString", value = "roboshop123" }
+
+
+  #Staging Env Parameters
+  "docdb.stage.master_username" = { type = "String", value = "docdbadmin" }
+  "docdb.stage.master_password" = { type = "SecureString", value = "roboshop1234" }
+  "docdb.stage.endpoint"        = { type = "String", value = "stage-docdb-cluster.cluster-c0104uc8qq16.us-east-1.docdb.amazonaws.com" }
+
+  "rds.stage.database_name"     = { type = "String", value = "dummy" }
+  "rds.stage.master_username"   = { type = "String", value = "devadmin" }
+  "rds.stage.master_password"   = { type = "SecureString", value = "roboshop1234" }
+  "rds.stage.endpoint"          = { type = "String", value = "stage-rds-cluster.cluster-c0104uc8qq16.us-east-1.rds.amazonaws.com" }
+
+  "elasticache.stage.endpoint" = { type = "String", value = "stage-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "cart.stage.CATALOGUE_HOST" = { type = "String", value = "catalogue-stage.rsdevops.in" }
+  "cart.stage.CATALOGUE_PORT" = { type = "String", value = "80" }
+
+  "shipping.stage.CART_ENDPOINT" = { type = "String", value = "cart-stage.rsdevops.in:80" }
+
+  "payment.stage.CART_HOST" = { type = "String", value = "cart-stage.rsdevops.in" }
+  "payment.stage.CART_PORT" = { type = "String", value = "80" }
+  "payment.stage.USER_HOST" = { type = "String", value = "user-stage.rsdevops.in" }
+  "payment.stage.USER_PORT" = { type = "String", value = "80" }
+
+  "payment.stage.AMQP_HOST" = { type = "String", value = "rabbitmq-stage.rsdevops.in" }
+  "payment.stage.AMQP_USER" = { type = "String", value = "roboshop" }
+  "payment.stage.AMQP_PASS" = { type = "SecureString", value = "roboshop123" }
+
+  "nexus.stage.username"    = { type = "String", value = "admin" }
+  "nexus.stage.password"    = { type = "SecureString", value = "Devops74" }
+
+  "cart.stage.version"         = { type = "String", value = "2" }
+  "catalogue.stage.version"    = { type = "String", value = "31" }
+  "user.stage.version"         = { type = "String", value = "2" }
+  "shipping.stage.version"     = { type = "String", value = "9" }
+  "payment.stage.version"      = { type = "String", value = "3" }
+  "frontend.stage.version"     = { type = "String", value = "1" }
+
+  "catalogue.stage.DOCUMENTDB" = { type = "String", value = "true" }
+  "catalogue.stage.MONGO_URL"  = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@stage-docdb-cluster.cluster-c0104uc8qq16.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&tlsCAFile=/app/global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
+
+  "user.stage.DOCUMENTDB" = { type = "String", value = "true" }
+  "user.stage.MONGO_URL"  = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@stage-docdb-cluster.cluster-c0104uc8qq16.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=/app/global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
+  "user.stage.REDIS_HOST" = { type = "SecureString", value = "stage-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "cart.stage.CATALOGUE_HOST_k" = { type = "String", value = "catalogue" }
+  "cart.stage.CATALOGUE_PORT_k" = { type = "String", value = "80" }
+  "cart.stage.REDIS_HOST"       = { type = "SecureString", value = "stage-elasticache-cluster.gsownz.0001.use1.cache.amazonaws.com" }
+
+  "shipping.stage.CART_ENDPOINT_k" = { type = "String", value = "cart:80" }
+  "shipping.stage.DB_HOST"         = { type = "SecureString", value = "stage-rds-cluster.cluster-c0104uc8qq16.us-east-1.rds.amazonaws.com" }
+
+  "payment.stage.CART_HOST_k" = { type = "String", value = "cart" }
+  "payment.stage.CART_PORT_k" = { type = "String", value = "80" }
+  "payment.stage.USER_HOST_k" = { type = "String", value = "user" }
+  "payment.stage.USER_PORT_k" = { type = "String", value = "80" }
+
+  "payment.stage.AMQP_HOST_k" = { type = "String", value = "rabbitmq-stage.rsdevops.in" }
+  "payment.stage.AMQP_USER_k" = { type = "String", value = "roboshop" }
+  "payment.stage.AMQP_PASS_k" = { type = "SecureString", value = "roboshop123" }
 }
